@@ -212,8 +212,8 @@ class _LoginState extends State<Login> {
                                         children: [
                                           InkWell(
                                             onTap: () {
-                                              // signIN();
-                                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage(),));
+                                              signIN();
+                                              // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage(),));
                                             },
                                             child: button_1(
                                                 btn_width: (width * .9),

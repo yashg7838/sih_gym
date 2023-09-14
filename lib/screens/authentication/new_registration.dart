@@ -27,13 +27,17 @@ class _RegistrationPageState extends State<RegistrationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Text('Registration'),
+        titleTextStyle: TextStyle(
+          color: Colors.white
+        ),
         elevation: 0,
       ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: SingleChildScrollView(
+          child: Container(
             child: Form(
               key: _formKey,
               child: Column(
