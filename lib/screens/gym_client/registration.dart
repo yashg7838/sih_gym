@@ -16,6 +16,7 @@ class registrationState extends State<registration> {
     return Scaffold(
       // backgroundColor: Colors.pink,
       appBar: AppBar(
+        toolbarHeight: height*0.075,
         backgroundColor: Colors.black,
         title: const Text("Fitness",
           style: TextStyle(fontStyle: FontStyle.italic),
@@ -24,7 +25,7 @@ class registrationState extends State<registration> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          height: height,
+          height: height*0.925,
           decoration: BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/images/bulbs.png"), fit: BoxFit.cover),
@@ -205,7 +206,7 @@ class registrationState extends State<registration> {
               ),
 
               Padding(
-                padding: EdgeInsets.only(top: height*0.025,),
+                padding: EdgeInsets.only(top: height*0.05,),
                 child: SizedBox(
                   width: width*0.9,
                   height: height*0.07,
@@ -214,7 +215,7 @@ class registrationState extends State<registration> {
                     style: ElevatedButton.styleFrom(foregroundColor: Colors.black, backgroundColor: Color(0xffE5E5E5), textStyle: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
                     ),
                     onPressed: () {},
-                    child: const Text('Enabled',),
+                    child: const Text('Submit',),
                   ),
                 ),
               ),
