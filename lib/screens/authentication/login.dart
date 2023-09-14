@@ -4,7 +4,7 @@ import 'package:sih_gym/screens/authentication/utils.dart';
 
 import '../../widgets/buttons/button_1.dart';
 import 'forgetpasswordpage.dart';
-final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
 class Login extends StatefulWidget {
   final VoidCallback showRegisterPage;
   const Login({Key? key, required this.showRegisterPage}): super(key:key);
@@ -384,7 +384,7 @@ class _LoginState extends State<Login> {
       print(e);
       Utils.showSnackBar(e.message);
     }
-    navigatorKey.currentState!.popUntil((route) => route.isFirst);
+    Navigator.of(context).pop();
   }
 }
 

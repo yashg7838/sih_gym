@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:sih_gym/screens/authentication/utils.dart';
 
 import '../../widgets/buttons/button_1.dart';
-final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
 
 
 class Register extends StatefulWidget {
@@ -412,7 +412,7 @@ class _RegisterState extends State<Register> {
 
       Utils.showSnackBar(e.message);
     }
-    navigatorKey.currentState!.popUntil((route) => route.isFirst);
+    Navigator.of(context).pop();
   }
 }
 
