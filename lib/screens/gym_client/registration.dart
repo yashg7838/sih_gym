@@ -26,7 +26,7 @@ class registrationState extends State<registration> {
       body: SingleChildScrollView(
         child: Container(
           height: height*0.925,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/images/bulbs.png"), fit: BoxFit.cover),
           ),
@@ -36,7 +36,7 @@ class registrationState extends State<registration> {
                 child: Padding(padding: EdgeInsets.only(
                     top: height*0.05,
                 ),
-                child: Text("Registration Form",
+                child: const Text("Registration Form",
                 style: TextStyle(fontSize: 30),),),
               ),
               Padding(
@@ -45,7 +45,7 @@ class registrationState extends State<registration> {
                   width: width*0.9,
                   child: TextFormField(
                     decoration: InputDecoration(
-                      fillColor: Color.fromRGBO(0, 0, 0, 0.5),
+                      fillColor: const Color.fromRGBO(0, 0, 0, 0.5),
                       filled: true,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(50.0),
@@ -54,10 +54,10 @@ class registrationState extends State<registration> {
                         borderRadius: BorderRadius.circular(50.0),
                       ),
                       hintText: 'Gym Name',
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
                         color: Colors.white,
                       ),
-                      contentPadding: EdgeInsets.symmetric(horizontal: 40,vertical: 20),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),
                     ),
                   ),
                 ),
@@ -68,7 +68,7 @@ class registrationState extends State<registration> {
                   width: width*0.9,
                   child: TextFormField(
                     decoration: InputDecoration(
-                      fillColor: Color.fromRGBO(0, 0, 0, 0.5),
+                      fillColor: const Color.fromRGBO(0, 0, 0, 0.5),
                       filled: true,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(50.0),
@@ -77,10 +77,10 @@ class registrationState extends State<registration> {
                         borderRadius: BorderRadius.circular(50.0),
                       ),
                       hintText: 'Location',
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
                         color: Colors.white,
                       ),
-                      contentPadding: EdgeInsets.symmetric(horizontal: 40,vertical: 20),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),
                     ),
                   ),
                 ),
@@ -94,7 +94,7 @@ class registrationState extends State<registration> {
                       width: width*0.4,
                       child: TextFormField(
                         decoration: InputDecoration(
-                          fillColor: Color.fromRGBO(0, 0, 0, 0.5),
+                          fillColor: const Color.fromRGBO(0, 0, 0, 0.5),
                           filled: true,
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50.0),
@@ -103,10 +103,10 @@ class registrationState extends State<registration> {
                             borderRadius: BorderRadius.circular(50.0),
                           ),
                           hintText: 'Area',
-                          hintStyle: TextStyle(
+                          hintStyle: const TextStyle(
                             color: Colors.white,
                           ),
-                          contentPadding: EdgeInsets.symmetric(horizontal: 40,vertical: 20),
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),
                         ),
                       ),
                     ),
@@ -117,7 +117,7 @@ class registrationState extends State<registration> {
                       width: width*0.4,
                       child: TextFormField(
                         decoration: InputDecoration(
-                          fillColor: Color.fromRGBO(0, 0, 0, 0.5),
+                          fillColor: const Color.fromRGBO(0, 0, 0, 0.5),
                           filled: true,
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50.0),
@@ -126,10 +126,10 @@ class registrationState extends State<registration> {
                             borderRadius: BorderRadius.circular(50.0),
                           ),
                           hintText: 'Capacity',
-                          hintStyle: TextStyle(
+                          hintStyle: const TextStyle(
                             color: Colors.white,
                           ),
-                          contentPadding: EdgeInsets.symmetric(horizontal: 40,vertical: 20),
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),
                         ),
                       ),
                     ),
@@ -142,7 +142,7 @@ class registrationState extends State<registration> {
                   width: width*0.9,
                   child: TextFormField(
                     decoration: InputDecoration(
-                      fillColor: Color.fromRGBO(0, 0, 0, 0.5),
+                      fillColor: const Color.fromRGBO(0, 0, 0, 0.5),
                       filled: true,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(50.0),
@@ -151,10 +151,10 @@ class registrationState extends State<registration> {
                       borderRadius: BorderRadius.circular(50.0),
                       ),
                       hintText: 'No. of gym equipments',
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
                         color: Colors.white,
                       ),
-                      contentPadding: EdgeInsets.symmetric(horizontal: 40,vertical: 20),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),
                     ),
                   ),
                 ),
@@ -166,7 +166,7 @@ class registrationState extends State<registration> {
                   width: width*0.9,
                   child: TextFormField(
                     decoration: InputDecoration(
-                      fillColor: Color.fromRGBO(0, 0, 0, 0.5),
+                      fillColor: const Color.fromRGBO(0, 0, 0, 0.5),
                       filled: true,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(50.0),
@@ -175,10 +175,10 @@ class registrationState extends State<registration> {
                         borderRadius: BorderRadius.circular(50.0),
                       ),
                       hintText: 'No of trainers ',
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
                         color: Colors.white,
                       ),
-                      contentPadding: EdgeInsets.symmetric(horizontal: 40,vertical: 20),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),
                     ),
                   ),
                 ),
@@ -190,16 +190,16 @@ class registrationState extends State<registration> {
                   width: width*0.9,
                   child: TextFormField(
                     decoration: InputDecoration(
-                      fillColor: Color.fromRGBO(0, 0, 0, 0.5),
+                      fillColor: const Color.fromRGBO(0, 0, 0, 0.5),
                       filled: true,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(50.0),
                       ),
                       hintText: 'Timings',
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
                         color: Colors.white,
                       ),
-                      contentPadding: EdgeInsets.symmetric(horizontal: 40,vertical: 20),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),
                     ),
                   ),
                 ),
@@ -212,7 +212,7 @@ class registrationState extends State<registration> {
                   height: height*0.07,
                   child:
                   ElevatedButton(
-                    style: ElevatedButton.styleFrom(foregroundColor: Colors.black, backgroundColor: Color(0xffE5E5E5), textStyle: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                    style: ElevatedButton.styleFrom(foregroundColor: Colors.black, backgroundColor: const Color(0xffE5E5E5), textStyle: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
                     ),
                     onPressed: () {},
                     child: const Text('Submit',),

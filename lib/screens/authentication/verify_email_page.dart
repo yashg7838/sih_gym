@@ -69,10 +69,6 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
       return ConditionalWidgetPage();
     } else{
       return Scaffold(
-        appBar: AppBar(
-          title: Text("Verify Email"),
-
-        ),
         body: Padding(
           padding: EdgeInsets.all(16),
           child: Column(
