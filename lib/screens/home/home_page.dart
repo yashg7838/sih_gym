@@ -34,16 +34,6 @@ class _Home_for_newState extends State<Home_for_new> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      child: Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 8),
-                            child: Icon(Icons.location_on_sharp, color: Colors.white,),
-                          ),
-                          SizedBox(width: 10,),
-                          Text("Location")
-                        ],
-                      ),
                       height: height*0.05,
                       width: width*0.35,
                       // color: Colors.grey,
@@ -51,18 +41,18 @@ class _Home_for_newState extends State<Home_for_new> {
                         color: Colors.grey,
                         borderRadius: BorderRadius.circular(20)
                       ),
-                    ),
-                    Container(
-                      child: Row(
+                      child: const Row(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(left: 8),
-                            child: Icon(Icons.search, color: Colors.white,),
+                            padding: EdgeInsets.only(left: 8),
+                            child: Icon(Icons.location_on_sharp, color: Colors.white,),
                           ),
                           SizedBox(width: 10,),
-                          Text("Search")
+                          Text("Location")
                         ],
                       ),
+                    ),
+                    Container(
                       height: height*0.05,
                       width: width*0.35,
                       // color: Colors.grey,
@@ -70,8 +60,18 @@ class _Home_for_newState extends State<Home_for_new> {
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(20)
                       ),
+                      child: const Row(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(left: 8),
+                            child: Icon(Icons.search, color: Colors.white,),
+                          ),
+                          SizedBox(width: 10,),
+                          Text("Search")
+                        ],
+                      ),
                     ),
-                    Icon(Icons.sort,color: Colors.white,)
+                    const Icon(Icons.sort,color: Colors.white,)
                   ],
                 ),
               ),
@@ -81,13 +81,13 @@ class _Home_for_newState extends State<Home_for_new> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                          child: Image.asset(""),
-                        height: height *0.12,
+                      SizedBox(
+                          height: height *0.12,
                         width: width*0.3,
+                          child: Image.asset(""),
                       ),
                       Container(
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Row(
@@ -116,13 +116,13 @@ class _Home_for_newState extends State<Home_for_new> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Image.asset(""),
+                      SizedBox(
                         height: height *0.12,
                         width: width*0.3,
+                        child: Image.asset(""),
                       ),
                       Container(
-                        child: Column(
+                        child: const Column(
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -150,13 +150,13 @@ class _Home_for_newState extends State<Home_for_new> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Image.asset(""),
+                      SizedBox(
                         height: height *0.12,
                         width: width*0.3,
+                        child: Image.asset(""),
                       ),
                       Container(
-                        child: Column(
+                        child: const Column(
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -184,13 +184,13 @@ class _Home_for_newState extends State<Home_for_new> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Image.asset(""),
+                      SizedBox(
                         height: height *0.12,
                         width: width*0.3,
+                        child: Image.asset(""),
                       ),
                       Container(
-                        child: Column(
+                        child: const Column(
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -218,13 +218,13 @@ class _Home_for_newState extends State<Home_for_new> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Image.asset(""),
+                      SizedBox(
                         height: height *0.12,
                         width: width*0.3,
+                        child: Image.asset(""),
                       ),
                       Container(
-                        child: Column(
+                        child: const Column(
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -252,13 +252,13 @@ class _Home_for_newState extends State<Home_for_new> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Image.asset(""),
+                      SizedBox(
                         height: height *0.12,
                         width: width*0.3,
+                        child: Image.asset(""),
                       ),
                       Container(
-                        child: Column(
+                        child: const Column(
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,

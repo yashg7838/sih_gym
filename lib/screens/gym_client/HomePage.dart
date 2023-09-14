@@ -14,6 +14,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     double width = MediaQuery. of(context). size. width ;
     double height = MediaQuery. of(context). size. height;
+    DateTime now = DateTime.now();
+    String greeting = _getGreeting(now);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
@@ -40,7 +42,7 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.only(left: width*0.05,
               bottom: height*0.05,
               top: height*0.025),
-              child: Text("Good Evening",
+              child: Text(greeting,
                 style: TextStyle(fontSize: 40,
                   fontWeight: FontWeight.bold,),
               ),
@@ -50,7 +52,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 CircleAvatar(
                   radius: width * 0.25,
-                  backgroundImage: NetworkImage("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3ltfGVufDB8fDB8fHww&w=1000&q=80"),
+                  backgroundImage: const NetworkImage("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3ltfGVufDB8fDB8fHww&w=1000&q=80"),
                   backgroundColor: Colors.transparent,
                 ),
               ],
@@ -59,7 +61,7 @@ class _HomePageState extends State<HomePage> {
               child: Padding(
                 padding: EdgeInsets.only(bottom: height*0.025,
                     top: height*0.025),
-                child: Text("Talwalkers Gurgaon",
+                child: const Text("Talwalkers Gurgaon",
                   style: TextStyle(fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),
@@ -70,7 +72,7 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 width: width*0.25,
                 height: height*0.05,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(50)),
                 gradient: LinearGradient(
                   colors: [Colors.yellow, Color(0xffFFD700)],
@@ -78,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                   end: Alignment.bottomCenter,
                 ),
               ),
-                child: Center(
+                child: const Center(
                   child: Text("GOLD",
                   style: TextStyle(
                     color: Colors.black,
@@ -99,11 +101,11 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       width: width*0.4,
                       height: height*0.05,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(50)),
                         color: Color(0xffFFBEBA),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text("Members",
                           style: TextStyle(
                             color: Colors.black,
@@ -118,11 +120,11 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       width: width*0.4,
                       height: height*0.05,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(50)),
                         color: Color(0xffAAD3FF),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text("Visitors",
                           style: TextStyle(
                             color: Colors.black,
@@ -140,12 +142,12 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   width: width*0.175,
                 ),
-                Text("45",
+                const Text("45",
                 style: TextStyle(fontSize: 30),),
                 SizedBox(
                   width: width*0.475,
                 ),
-                Text("45",
+                const Text("45",
                   style: TextStyle(fontSize: 30),),
               ],
             ),
@@ -156,11 +158,11 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 width: width*0.8,
                 height: height*0.05,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(50)),
                   color: Color(0xffC3F2CB),
                 ),
-                child: Center(
+                child: const Center(
                   child: Text("Upgrade",
                   style: TextStyle(fontSize: 20,
                   color: Colors.black,
@@ -172,5 +174,16 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
+  }
+
+  String _getGreeting(DateTime now) {
+    int hour = now.hour;
+    if (hour >= 0 && hour < 12) {
+      return "Good Morning";
+    } else if (hour >= 12 && hour < 17) {
+      return "Good Afternoon";
+    } else {
+      return "Good Evening";
+    }
   }
 }
