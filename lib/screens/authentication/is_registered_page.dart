@@ -31,7 +31,7 @@ class ConditionalWidgetPage extends StatelessWidget {
 
         if (snapshot.hasData && snapshot.data!.exists) {
           // If the document exists, open the first widget
-          return home_page();
+          return Home_for_new();
         } else {
           // If the document doesn't exist, open the second widget
           return RegistrationPage();
