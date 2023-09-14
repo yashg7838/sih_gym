@@ -351,6 +351,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
         'uid': user.uid,
         "profileImage": _ProfileimageURL,
         "govID": _GovIDURL,
+        "user" : "gymbro"
       });
 
       // Document creation successful

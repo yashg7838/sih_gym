@@ -20,7 +20,7 @@ class _Home_for_newState extends State<Home_for_new> {
           style: TextStyle(fontStyle: FontStyle.italic),
         ),
         centerTitle: true,actions: <Widget>[
-        
+
       ],
       ),
       body: SafeArea(
@@ -38,8 +38,8 @@ class _Home_for_newState extends State<Home_for_new> {
                       width: width*0.35,
                       // color: Colors.grey,
                       decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(20)
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(20)
                       ),
                       child: const Row(
                         children: [
@@ -82,21 +82,16 @@ class _Home_for_newState extends State<Home_for_new> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                          height: height *0.12,
+                        height: height *0.12,
                         width: width*0.3,
-                          child: Image.asset(""),
+                        child: Image.asset("assets/images/gym.jpeg"),
                       ),
                       Container(
                         child: const Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('Ace Gym'),
-
-                              ],
-                            ),
+                            Text('Ace Gym'),
                             Text('''Location : Near Sheela Bypass,
                   Rohtak''')
 
@@ -119,18 +114,14 @@ class _Home_for_newState extends State<Home_for_new> {
                       SizedBox(
                         height: height *0.12,
                         width: width*0.3,
-                        child: Image.asset(""),
+                        child: Image.asset("assets/images/gym.jpeg"),
                       ),
                       Container(
                         child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('Ace Gym'),
-
-                              ],
-                            ),
+                            Text('Ace Gym'),
                             Text('''Location : Near Sheela Bypass,
                   Rohtak''')
 
@@ -153,18 +144,14 @@ class _Home_for_newState extends State<Home_for_new> {
                       SizedBox(
                         height: height *0.12,
                         width: width*0.3,
-                        child: Image.asset(""),
+                        child: Image.asset("assets/images/gym.jpeg"),
                       ),
                       Container(
                         child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('Ace Gym'),
-
-                              ],
-                            ),
+                            Text('Ace Gym'),
                             Text('''Location : Near Sheela Bypass,
                   Rohtak''')
 
@@ -187,18 +174,14 @@ class _Home_for_newState extends State<Home_for_new> {
                       SizedBox(
                         height: height *0.12,
                         width: width*0.3,
-                        child: Image.asset(""),
+                        child: Image.asset("assets/images/gym.jpeg"),
                       ),
                       Container(
                         child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('Ace Gym'),
-
-                              ],
-                            ),
+                            Text('Ace Gym'),
                             Text('''Location : Near Sheela Bypass,
                   Rohtak''')
 
@@ -221,27 +204,19 @@ class _Home_for_newState extends State<Home_for_new> {
                       SizedBox(
                         height: height *0.12,
                         width: width*0.3,
-                        child: Image.asset(""),
+                        child: Image.asset("assets/images/gym.jpeg"),
                       ),
                       Container(
                         child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('Ace Gym'),
-
-                              ],
-                            ),
+                            Text('Ace Gym'),
                             Text('''Location : Near Sheela Bypass,
                   Rohtak''')
-
-
                           ],
                         ),
                       ),
-
-
                     ],
                   ),
                 ),
@@ -255,31 +230,23 @@ class _Home_for_newState extends State<Home_for_new> {
                       SizedBox(
                         height: height *0.12,
                         width: width*0.3,
-                        child: Image.asset(""),
+                        child: Image.asset("assets/images/gym.jpeg"),
                       ),
                       Container(
                         child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('Ace Gym'),
-
-                              ],
-                            ),
+                            Text('Ace Gym'),
                             Text('''Location : Near Sheela Bypass,
                   Rohtak''')
-
-
                           ],
                         ),
                       ),
-
-
                     ],
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
