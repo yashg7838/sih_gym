@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:sih_gym/screens/authentication/auth_page.dart';
 import 'package:sih_gym/screens/authentication/verify_email_page.dart';
+import 'package:sih_gym/screens/gym_owner/homePage.dart';
 
 import 'firebase_options.dart';
 
@@ -21,12 +22,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Fitness',
       theme: ThemeData(
+        textTheme: TextTheme(
+          bodyLarge: TextStyle(),
+          bodyMedium: TextStyle(),
+        ).apply(
+          bodyColor: Colors.white,
+        ),
+        appBarTheme: AppBarTheme(
+          foregroundColor: Colors.white,
+        ),
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF2D2727)),
         useMaterial3: true,
+        scaffoldBackgroundColor: Colors.black,
       ),
-      home: MainPage(),
+      home: homePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
