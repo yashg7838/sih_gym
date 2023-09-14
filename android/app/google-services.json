@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "835254322475",
-    "project_id": "sih-gym",
-    "storage_bucket": "sih-gym.appspot.com"
+    "project_number": "663254852197",
+    "project_id": "gymhive-656cb",
+    "storage_bucket": "gymhive-656cb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:835254322475:android:e66fc276c3a0420bf7716e",
+        "mobilesdk_app_id": "1:663254852197:android:3a49b26f65e285a8821c8c",
         "android_client_info": {
           "package_name": "com.example.sih_gym"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDi_GLROeONbud5358QwBbxR1Iq2LH971M"
+          "current_key": "AIzaSyAdJPocpqBnKUQtjoQhx8Kk81JEMN9-Kvg"
         }
       ],
       "services": {

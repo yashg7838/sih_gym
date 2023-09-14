@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBIWDpGKCOqODZTC19naGkbISSWu7uIxe4',
-    appId: '1:835254322475:web:25f6b33d1cc66dddf7716e',
-    messagingSenderId: '835254322475',
-    projectId: 'sih-gym',
-    authDomain: 'sih-gym.firebaseapp.com',
-    storageBucket: 'sih-gym.appspot.com',
-    measurementId: 'G-DKFSEDHJLD',
+    apiKey: 'AIzaSyDucb_y29Jd85XEgCsl0ltESOq3DAPup5w',
+    appId: '1:663254852197:web:3cd64bf8b1692530821c8c',
+    messagingSenderId: '663254852197',
+    projectId: 'gymhive-656cb',
+    authDomain: 'gymhive-656cb.firebaseapp.com',
+    storageBucket: 'gymhive-656cb.appspot.com',
+    measurementId: 'G-B5C0L8KHGC',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDi_GLROeONbud5358QwBbxR1Iq2LH971M',
-    appId: '1:835254322475:android:e66fc276c3a0420bf7716e',
-    messagingSenderId: '835254322475',
-    projectId: 'sih-gym',
-    storageBucket: 'sih-gym.appspot.com',
+    apiKey: 'AIzaSyAdJPocpqBnKUQtjoQhx8Kk81JEMN9-Kvg',
+    appId: '1:663254852197:android:3a49b26f65e285a8821c8c',
+    messagingSenderId: '663254852197',
+    projectId: 'gymhive-656cb',
+    storageBucket: 'gymhive-656cb.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyChJEFUkfjx6gH5tloIqbofSj9ouHocei0',
-    appId: '1:835254322475:ios:90faf3cd43718c09f7716e',
-    messagingSenderId: '835254322475',
-    projectId: 'sih-gym',
-    storageBucket: 'sih-gym.appspot.com',
+    apiKey: 'AIzaSyC6S2sE0N2Uyc76kqfUL--jClBdIZx-nRQ',
+    appId: '1:663254852197:ios:5214ba5203c05d0a821c8c',
+    messagingSenderId: '663254852197',
+    projectId: 'gymhive-656cb',
+    storageBucket: 'gymhive-656cb.appspot.com',
     iosBundleId: 'com.example.sihGym',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyChJEFUkfjx6gH5tloIqbofSj9ouHocei0',
-    appId: '1:835254322475:ios:e1814a2fe0475a59f7716e',
-    messagingSenderId: '835254322475',
-    projectId: 'sih-gym',
-    storageBucket: 'sih-gym.appspot.com',
+    apiKey: 'AIzaSyC6S2sE0N2Uyc76kqfUL--jClBdIZx-nRQ',
+    appId: '1:663254852197:ios:9958a2c0da24e48d821c8c',
+    messagingSenderId: '663254852197',
+    projectId: 'gymhive-656cb',
+    storageBucket: 'gymhive-656cb.appspot.com',
     iosBundleId: 'com.example.sihGym.RunnerTests',
   );
 }

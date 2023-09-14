@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sih_gym/screens/gym_client/QRCode.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
           ),
           onPressed: () {
-            // do something
+            Navigator.push(context, MaterialPageRoute(builder: (context) => QRCode(),));
           },
         )
       ],
