@@ -5,6 +5,7 @@ import 'package:sih_gym/screens/authentication/auth_page.dart';
 import 'package:sih_gym/screens/authentication/verify_email_page.dart';
 import 'package:sih_gym/screens/client/homePage.dart';
 import 'package:sih_gym/screens/gym_client/HomePage.dart';
+import 'package:sih_gym/screens/gym_client/registration.dart';
 
 import 'firebase_options.dart';
 
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: HomePage(),
+      home: registration(),
       debugShowCheckedModeBanner: false,
     );
   }
