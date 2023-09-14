@@ -3,7 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:sih_gym/screens/authentication/auth_page.dart';
 import 'package:sih_gym/screens/authentication/verify_email_page.dart';
-import 'package:sih_gym/screens/gym_owner/homePage.dart';
+import 'package:sih_gym/screens/client/homePage.dart';
+import 'package:sih_gym/screens/gym_client/HomePage.dart';
 
 import 'firebase_options.dart';
 
@@ -12,7 +13,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: homePage(),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class homePage extends StatefulWidget {
-  const homePage({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  State<homePage> createState() => _homePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _homePageState extends State<homePage> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery. of(context). size. width ;
@@ -49,14 +49,14 @@ class _homePageState extends State<homePage> {
               children: [
                 CircleAvatar(
                   radius: width * 0.25,
-                  backgroundImage: NetworkImage("https://variety.com/wp-content/uploads/2021/04/Avatar.jpg"),
+                  backgroundImage: NetworkImage("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3ltfGVufDB8fDB8fHww&w=1000&q=80"),
                   backgroundColor: Colors.transparent,
                 ),
               ],
             ),
             Center(
               child: Padding(
-                padding: EdgeInsets.only(bottom: height*0.05,
+                padding: EdgeInsets.only(bottom: height*0.025,
                     top: height*0.025),
                 child: Text("Talwalkers Gurgaon",
                   style: TextStyle(fontSize: 30,
@@ -90,7 +90,7 @@ class _homePageState extends State<homePage> {
             Container(
               child: Padding(
                 padding: EdgeInsets.only(bottom: height*0.015,
-                    top: height*0.025,
+                    top: height*0.03,
                     left: width*0.025,
                     right: width*0.025),
                 child: Row(
@@ -103,7 +103,7 @@ class _homePageState extends State<homePage> {
                         color: Color(0xffFFBEBA),
                       ),
                       child: Center(
-                        child: Text("Checked in:",
+                        child: Text("Members",
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -122,7 +122,7 @@ class _homePageState extends State<homePage> {
                         color: Color(0xffAAD3FF),
                       ),
                       child: Center(
-                        child: Text("Days left:",
+                        child: Text("Visitors",
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -160,7 +160,7 @@ class _homePageState extends State<homePage> {
                   color: Color(0xffC3F2CB),
                 ),
                 child: Center(
-                  child: Text("Change Location",
+                  child: Text("Upgrade",
                   style: TextStyle(fontSize: 20,
                   color: Colors.black,
                   fontWeight: FontWeight.bold),),
