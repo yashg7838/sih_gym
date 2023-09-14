@@ -48,7 +48,7 @@ dev_dependencies:
   carousel_slider: ^4.2.1
   qr_flutter: ^4.1.0
   readmore: ^2.2.0
-  easy_upi_payment: ^0.1.5
+
   image_picker: ^1.0.2
   flutter_phone_direct_caller: ^2.1.1
   email_validator: ^2.1.17
