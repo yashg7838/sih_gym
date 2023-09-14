@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:sih_gym/main.dart';
 import 'package:sih_gym/screens/authentication/utils.dart';
 
 import '../../widgets/buttons/button_1.dart';
@@ -213,7 +214,8 @@ class _LoginState extends State<Login> {
                                       children: [
                                         InkWell(
                                           onTap: () {
-                                            signIN();
+                                            // signIN();
+                                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MainPage(),));
                                           },
                                           child: button_1(
                                               btn_width: (width * .9),
