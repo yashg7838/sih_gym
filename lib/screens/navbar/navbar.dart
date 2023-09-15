@@ -29,11 +29,8 @@ class _NavBarAppState extends State<NavBarApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-
-    body: Center(
-    child: _widgetOptions.elementAt(_selectedIndex),
-    ),
-    bottomNavigationBar: BottomNavigationBar(
+          body: Center(child: _widgetOptions.elementAt(_selectedIndex),
+    ), bottomNavigationBar: BottomNavigationBar(
     items: const <BottomNavigationBarItem>[
     BottomNavigationBarItem(
     icon: Icon(Icons.home),

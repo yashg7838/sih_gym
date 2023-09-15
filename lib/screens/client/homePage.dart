@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sih_gym/screens/client/scanner.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:sih_gym/screens/client/user_profile.dart';
 import 'package:sih_gym/screens/home/home_page.dart';
 
 
@@ -23,7 +24,12 @@ class _homePageState extends State<homePage> {
     String greeting = _getGreeting(now);
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.settings),
+        leading: InkWell(
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => UserProfile(),));
+          },
+            child: Icon(Icons.settings)
+        ),
         backgroundColor: Colors.black,
         title: const Text("Fitness",
           style: TextStyle(fontStyle: FontStyle.italic),
