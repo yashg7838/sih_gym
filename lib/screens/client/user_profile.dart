@@ -84,7 +84,7 @@ class UserProfileState extends State<UserProfile> {
                     ),
                     Center(
                       child: const Text(
-                        "yash.gupta.21cse@bmu.edu.in",
+                        "vishal.saharan.21cse@bmu.edu.in",
                         style: TextStyle(fontSize: 15),
                       ),
                     ),
@@ -154,13 +154,15 @@ class UserProfileState extends State<UserProfile> {
                           ),
                           child: Row(
                             children: [
-                              Center(
-                                child: Padding(
-                                  padding: EdgeInsets.only(left: width * 0.125),
-                                  child: Text(
-                                    "Invite people",
-                                    style: TextStyle(
-                                      fontSize: 17.5,
+                              InkWell(
+                                child: Center(
+                                  child: Padding(
+                                    padding: EdgeInsets.only(left: width * 0.125),
+                                    child: Text(
+                                      "Invite people",
+                                      style: TextStyle(
+                                        fontSize: 17.5,
+                                      ),
                                     ),
                                   ),
                                 ),

@@ -188,14 +188,14 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       height: 200.0,
                       fit: BoxFit.cover,
                     )
-                  else const Center(child: Text("Image Ratio: 2:3 (Height:Width)")),
+                  else const Center(child: Text("Image Ratio: 1:1 (Height:Width)")),
                   SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: () {
                       _selectGovID();
                     },
 
-                    child: const Text('Select Profile Image*'),
+                    child: const Text('Select any Government ID*'),
                   ),
                   const SizedBox(height: 5.0),
                   if (_govID != null)

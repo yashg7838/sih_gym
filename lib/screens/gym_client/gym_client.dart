@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+// import 'package:easy_upi_payment/easy_upi_payment.dart';
 
 class gym_client extends StatefulWidget {
   const gym_client({Key? key}) : super(key: key);
@@ -234,7 +235,9 @@ class gym_clientState extends State<gym_client> {
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(foregroundColor: Colors.black, backgroundColor: const Color(0xffC3F2CB), textStyle: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      // _pay();
+                    },
                     child: const Text('Purchase Subscription',),
                   ),
                 ),
@@ -245,4 +248,16 @@ class gym_clientState extends State<gym_client> {
       ),
     );
   }
+  // _pay() async {
+  //   final res = await EasyUpiPaymentPlatform.instance.startPayment(
+  //     EasyUpiPaymentModel(
+  //       payeeVpa: '9368864036@okbizaxis',
+  //       payeeName: 'Gharelu',
+  //       amount: 10.0,
+  //       description: 'Shuttle Ticket',
+  //     ),
+  //   );
+  //   // TODO: add your success logic here
+  //   print(res);
+  // }
 }
