@@ -18,6 +18,12 @@ class _HomePageState extends State<HomePage> {
     String greeting = _getGreeting(now);
     return Scaffold(
       appBar: AppBar(
+        leading: InkWell(
+          onTap: (){
+
+          },
+          child: Icon(Icons.supervised_user_circle_rounded, color: Colors.white,),
+        ),
         backgroundColor: Colors.black,
         title: const Text("Fitness",
           style: TextStyle(fontStyle: FontStyle.italic),

@@ -40,11 +40,11 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Ticket Scanner"),
+        title: const Text("Gym Scanner"),
+        backgroundColor: Colors.black,
         titleTextStyle: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 22,
-            color: Colors.black
         ),
       ),
       body: Center(
@@ -52,14 +52,14 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              qrCodeResult,
-              style: TextStyle(fontSize: 20),
-            ),
+            // Text(
+            //   qrCodeResult,
+            //   style: TextStyle(fontSize: 20),
+            // ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: startQRScan,
-              child: const Text('Open Ticket Scanner'),
+              child: const Text('Open Scanner'),
             ),
           ],
         ),
