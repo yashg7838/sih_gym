@@ -15,6 +15,12 @@ class _Home_for_newState extends State<Home_for_new> {
     double height = MediaQuery. of(context). size. height;
     return Scaffold(
       appBar: AppBar(
+        leading: InkWell(
+          onTap: (){
+
+          },
+          child: Icon(Icons.supervised_user_circle_rounded, color: Colors.white,),
+        ),
         backgroundColor: Colors.black,
         title: const Text("Fitness",
           style: TextStyle(fontStyle: FontStyle.italic),
