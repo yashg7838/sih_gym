@@ -225,7 +225,7 @@ class gym_clientState extends State<gym_client> {
               ),
 
               Padding(
-                padding: EdgeInsets.only(top: height*0.05,
+                padding: EdgeInsets.only(top: height*0.005,
                     bottom: height*0.05),
                 child: SizedBox(
                   width: width*0.9,
